@@ -1,10 +1,10 @@
-import React, {memo} from 'react'
+import React, {memo, Ref} from 'react'
 import ButtonsSection from './buttons-section';
 import ProblemTable from './problem-table';
 
 function IndexPage(): JSX.Element {
     const tableRef = React.useRef<any>();
-    const refreshTable = (): void => {
+    const refreshTable = () => {
         void tableRef.current?.refreshTable()
     }
     
